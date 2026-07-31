@@ -1,21 +1,44 @@
 aid: multi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/multi.png
 name: Multi
-description: 'Multi is a company surfaced as a portfolio company of greylock and added to the API Evangelist
-  network as a stub for enrichment. Sector: applications. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Multi (originally launched as Remotion in 2019) was a macOS-native multiplayer
+  collaboration application for software teams, offering multi-person screensharing for up to
+  ten participants, shared cursor and keyboard control with sub-100ms latency, session recording,
+  and AI-generated summaries and action items. Backed by Greylock and First Round Capital, the
+  company was acqui-hired by OpenAI in June 2024; the product was shut down and user data deleted,
+  with the founding team joining OpenAI''s ChatGPT desktop group. The multi.app site remains live
+  as a static marketing page but exposes no public developer API, SDK, or documentation surface.'
 url: https://raw.githubusercontent.com/api-evangelist/multi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: defunct
+x-status-reason: acqui-hired by OpenAI June 2024; product shut down
 x-backed-by:
 - greylock
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Applications
+- Collaboration
+- Screen Sharing
+- Remote Work
+- macOS
+- Productivity
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/multi-domain-security.yml
 - type: Website
   url: https://multi.app
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
